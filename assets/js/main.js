@@ -52,26 +52,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 
 
-/* =====================================
-   RESUME 
-===================================== */
-
-// ABOUT — Resume button linking
-if (typeof resumeLinks !== 'undefined') {
-
-  const viewResumeBtn = document.getElementById('viewResumeBtn');
-  const downloadResumeBtn = document.getElementById('downloadResumeBtn');
-
-  if (viewResumeBtn) {
-    viewResumeBtn.href = resumeLinks.view || '#';
-  }
-
-  if (downloadResumeBtn) {
-    downloadResumeBtn.href = resumeLinks.download || resumeLinks.view || '#';
-  }
-}
-
-
 
 /* =====================================
    EXPERIENCE
