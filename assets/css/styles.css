@@ -43,9 +43,6 @@ PRELOADER
   border-top: 5px solid var(--cyan);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  box-shadow:
-    0 0 12px rgba(0,255,255,0.35),
-    0 0 24px rgba(0,255,255,0.25);
 }
 
 @keyframes spin {
