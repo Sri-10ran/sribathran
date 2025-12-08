@@ -97,12 +97,12 @@ const skillsData = [
       { name: "Java", logo: "assets/logos/java.png" }
     ]
   },
-  {
-    category: "Scripting languages",
-    skills: [
-      { name: "Bash script", logo: "assets/logos/bash.webp" }
-    ]
-  },
+  // {
+  //   category: "Scripting languages",
+  //   skills: [
+  //     { name: "Bash script", logo: "assets/logos/bash.webp" }
+  //   ]
+  // },
   {
     category: "CI / CD",
     skills: [
