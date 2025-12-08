@@ -26,7 +26,7 @@ const experienceData = [
 
   {
     duration: "Sep 2023 - May 2024",
-    title: "Diploma in Computer Hardware & Networking",
+    title: "Diploma in Computer Hardware & Servicing",
     subContent: "Ayya Nadar Janaki Ammal College",
     details: "Completed one-year diploma covering hardware, networking fundamentals and Linux basics."
   },
