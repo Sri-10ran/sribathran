@@ -68,7 +68,7 @@ PRELOADER
   border-bottom: 1px solid rgba(255,255,255,0.02);
   padding: 0.55rem 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 .brand-badge {
