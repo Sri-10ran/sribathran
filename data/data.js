@@ -14,7 +14,7 @@ const experienceData = [
     duration: "Nov 2024 - Dec 2024",
     title: "Zoho Cliqtrix 2025",
     subContent: "Bot Development Contest",
-    details: "Built 'Vroomie', a car service bot with my teammate Manikandan. Integrated Google Mail API (NodeMailer), Google Calendar API, and text processing using regex. Also explored Facebook post automation and Wikipedia result summarization."
+    details: "Built 'Vroomie', a car service bot with my teammate Manikandan. Integrated Google Mail API (NodeMailer), Google Calendar API and few deluge script regex. Also explored Facebook post automation and Wikipedia result summarization."
   },
 
   {
