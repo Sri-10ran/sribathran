@@ -10,12 +10,12 @@ const experienceData = [
     details: "Delivered real-world client work including domain purchase, hosting, deployment and user validation. Completed Vel Crackers as the first freelance project and gained experience in client communication, requirement gathering and production deployment."
   },
 
-  {
-    duration: "Nov 2024 - Dec 2024",
-    title: "Zoho Cliqtrix 2025",
-    subContent: "Bot Development Contest",
-    details: "Built 'Vroomie', a car service bot with my teammate Manikandan. Integrated Google Mail API (NodeMailer), Google Calendar API and few deluge script regex. Also explored Facebook post automation and Wikipedia result summarization."
-  },
+  // {
+  //   duration: "Nov 2024 - Dec 2024",
+  //   title: "Zoho Cliqtrix 2025",
+  //   subContent: "Bot Development Contest",
+  //   details: "Built 'Vroomie', a car service bot with my teammate Manikandan. Integrated Google Mail API (NodeMailer), Google Calendar API and few deluge script regex. Also explored Facebook post automation and Wikipedia result summarization."
+  // },
 
   {
     duration: "May 2024 - Jun 2024",
