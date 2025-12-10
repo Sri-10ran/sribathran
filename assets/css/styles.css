@@ -19,6 +19,33 @@ a { text-decoration: none; }
 .bg-section-alt { background: rgba(255,255,255,0.01); border-top: 1px solid rgba(255,255,255,0.02); }
 
 
+/*====================
+ANIMATION
+====================*/
+
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-dynamic {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-dynamic.show-dynamic {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /*==================
 PRELOADER
 ====================*/
