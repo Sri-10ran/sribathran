@@ -1,3 +1,31 @@
+/*========================
+ANIMATION
+=======================*/
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); 
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+
+
+
+const dynamicObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-dynamic");
+      dynamicObserver.unobserve(entry.target); 
+    }
+  });
+}, { threshold: 0.2 });
+
+
+
+
 /*============================
 PRELOADER
 ===========================*/
@@ -52,6 +80,26 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 
 
+/* =====================================
+   RESUME 
+===================================== */
+
+// ABOUT — Resume button linking
+if (typeof resumeLinks !== 'undefined') {
+
+  const viewResumeBtn = document.getElementById('viewResumeBtn');
+  const downloadResumeBtn = document.getElementById('downloadResumeBtn');
+
+  if (viewResumeBtn) {
+    viewResumeBtn.href = resumeLinks.view || '#';
+  }
+
+  if (downloadResumeBtn) {
+    downloadResumeBtn.href = resumeLinks.download || resumeLinks.view || '#';
+  }
+}
+
+
 
 /* =====================================
    EXPERIENCE
@@ -65,7 +113,7 @@ if (expRoot && Array.isArray(experienceData)) {
   experienceData.forEach(item => {
 
     const row = document.createElement('div');
-    row.className = 'experience-row';
+    row.className = 'experience-row animate-dynamic';
 
     const left = document.createElement('div');
     left.className = 'exp-left';
@@ -84,6 +132,7 @@ if (expRoot && Array.isArray(experienceData)) {
     row.appendChild(left);
     row.appendChild(right);
     expRoot.appendChild(row);
+    dynamicObserver.observe(row);
   });
 }
 
@@ -102,7 +151,7 @@ if (skillsRoot && Array.isArray(skillsData)) {
   skillsData.forEach(cat => {
 
     const col = document.createElement('div');
-    col.className = 'col-lg-4 col-md-6';
+    col.className = 'col-lg-4 col-md-6 animate-dynamic';
 
     const skillsHtml = (cat.skills || [])
       .map(s => `
@@ -113,7 +162,7 @@ if (skillsRoot && Array.isArray(skillsData)) {
       `).join('');
 
     col.innerHTML = `
-      <div class="skill-card h-100">
+      <div class="skill-card h-100 ">
         <h6 class="mb-3">${esc(cat.category)}</h6>
         <div class="d-flex flex-wrap gap-3">
           ${skillsHtml}
@@ -122,6 +171,7 @@ if (skillsRoot && Array.isArray(skillsData)) {
     `;
 
     skillsRoot.appendChild(col);
+    dynamicObserver.observe(col);
   });
 }
 
@@ -137,7 +187,7 @@ if (projectsRoot && Array.isArray(projectData)) {
 
   projectData.forEach(proj => {
     const col = document.createElement('div');
-    col.className = 'col-lg-6';
+    col.className = 'col-lg-6 animate-dynamic';
 
     const techHtml = (proj.techStack || [])
       .map(t => `<span class="tech-pill">${esc(t)}</span>`)
@@ -185,5 +235,6 @@ if (projectsRoot && Array.isArray(projectData)) {
     `;
 
     projectsRoot.appendChild(col);
+    dynamicObserver.observe(col);
   });
 }
