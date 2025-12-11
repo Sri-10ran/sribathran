@@ -79,28 +79,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-
-/* =====================================
-   RESUME 
-===================================== */
-
-// ABOUT — Resume button linking
-if (typeof resumeLinks !== 'undefined') {
-
-  const viewResumeBtn = document.getElementById('viewResumeBtn');
-  const downloadResumeBtn = document.getElementById('downloadResumeBtn');
-
-  if (viewResumeBtn) {
-    viewResumeBtn.href = resumeLinks.view || '#';
-  }
-
-  if (downloadResumeBtn) {
-    downloadResumeBtn.href = resumeLinks.download || resumeLinks.view || '#';
-  }
-}
-
-
-
 /* =====================================
    EXPERIENCE
 ===================================== */
@@ -179,7 +157,8 @@ if (skillsRoot && Array.isArray(skillsData)) {
 
 /*==========================
 PROJECTS
-===========================*/  
+===========================*/ 
+
 const projectsRoot = document.getElementById('projectsList');
 
 if (projectsRoot && Array.isArray(projectData)) {
@@ -194,7 +173,7 @@ if (projectsRoot && Array.isArray(projectData)) {
       .join('');
 
     const paragraphs = (proj.paragraphs || [])
-      .map(p => `<p class="project-paragraph mb-3">${esc(p)}</p>`)
+      .map(p => `<p class="project-paragraph mb-2">${esc(p)}</p>`)
       .join('');
 
     const links = proj.links || {};
@@ -221,10 +200,10 @@ if (projectsRoot && Array.isArray(projectData)) {
         </div>
 
         <!-- TECH STACK -->
-        <div class="mt-1 mb-3">${techHtml}</div>
+        <div class="mt-1 mb-1">${paragraphs}</div>
 
         <!-- DESCRIPTION -->
-        ${paragraphs}
+        ${techHtml}
 
         <div class="mb-4"></div>
 
