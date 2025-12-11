@@ -442,6 +442,7 @@ QUOTE
 
 
 
+
 /* =======================================
    PROJECT CARD 
 ======================================= */
@@ -449,7 +450,7 @@ QUOTE
 .project-card {
   background: var(--card);
   border-radius: 12px;
-  padding: 1.15rem;
+  padding: 1.2rem;
   border: 1px solid rgba(255,255,255,0.02);
   transition: transform .18s, box-shadow .18s;
   box-shadow:
@@ -460,30 +461,43 @@ QUOTE
 .tech-pill {
   display: inline-block;
   margin-right: 6px;
-  margin-bottom: 2px;
-  margin-top: 8px;
+  margin-bottom: 6px;
   padding: 6px 10px;
   border-radius: 999px;
   background: rgba(0,245,255,0.04);
   color: var(--text);
   font-weight: 600;
   font-size: .82rem;
-  border: 1px solid rgba(0,245,255,0.06);
+  border: 1px solid rgba(0,245,255,0.08);
 }
 
 .project-paragraph {
-  color: #cbd7dd;
+    color: #cbd7dd;
   line-height: 2;
-  margin-top: .6rem;
+  margin-top: .9rem;
   letter-spacing: 0.3px;
+  font-size: 1rem;
   text-align: justify;
-
-
+  padding: 0 .1rem;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 576px) {
+
   .project-card {
-    padding: 1rem;
+    padding: 1.25rem !important; 
+  }
+
+  .project-paragraph {
+    font-size: .95rem;
+    line-height: 1.85;
+    text-align: left;             
+    padding: 0 .1rem;
+  }
+
+  .tech-pill {
+    font-size: .78rem;
+    padding: 5px 9px;
   }
 }
 
@@ -511,8 +525,6 @@ QUOTE
 	font-weight: 600;
 	
 }
-
-
 
 
 /*==============================
