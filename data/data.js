@@ -10,6 +10,13 @@ const experienceData = [
     details: "Delivered real-world client work including domain purchase, hosting, deployment and user validation. Completed Vel Crackers as the first freelance project and gained experience in client communication, requirement gathering and production deployment."
   },
 
+  {
+    duration: "Jun 2022 - Jun 2024",
+    title: "Morning Paper Distributor",
+    subContent: "John Newspaper Agency",
+    details: "Delivered newspapers and magazines daily within 7:15 AM. Distributed Dinamalar, Dinakaran, The Hindu, Tamil Hindu, Theekkathir and popular magazines such as Kumudham and Ananda Vikatan. Developed strong punctuality, route planning, discipline and customer interaction skills. Grateful to Jenet Jeeva (who also runs JJJ Crackers) and John for the opportunity and guidance."
+  },
+
   // {
   //   duration: "Nov 2024 - Dec 2024",
   //   title: "Zoho Cliqtrix 2025",
