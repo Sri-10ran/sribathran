@@ -180,7 +180,7 @@ if (projectsRoot && Array.isArray(projectData)) {
     
     const liveTag = links.live ? `
       <a href="${esc(links.live)}" target="_blank" class="live-tag">
-        Live <i class="fa-solid fa-link"></i>
+        Link <i class="fa-solid fa-link"></i>
       </a>
     ` : ``;
 
