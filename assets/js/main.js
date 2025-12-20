@@ -185,7 +185,7 @@ if (projectsRoot && Array.isArray(projectData)) {
     ` : ``;
 
     const githubBtn = links.github ? `
-      <a href="${esc(links.github)}" target="_blank" class="btn-card-action-outline ">
+      <a href="${esc(links.github)}" target="_blank" class="btn-card-action">
         Explore <i class="fa-solid fa-code ms-2"></i>
       </a>
     ` : ``;
