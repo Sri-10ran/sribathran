@@ -222,10 +222,15 @@ button:focus, a:focus, .nav-link:focus, .navbar-toggler:focus {
   padding: .65rem 1rem;
 }
 
-.btn-card-action:hover,
-.btn-card-action-outline:hover {
+.btn-card-action:hover{
   box-shadow: 0 0 14px rgba(0, 255, 255, 0.45),
               0 0 28px rgba(0, 255, 255, 0.25);
+  transition: all .25s ease;
+}
+
+.btn-card-action-outline:hover{
+  background: rgba(0,255,255,0.12);
+  box-shadow: 0 0 6px rgba(0,255,255,0.35);
   transition: all .25s ease;
 }
 
