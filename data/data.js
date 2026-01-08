@@ -5,6 +5,14 @@ const experienceData = [
 
    {
     duration: "Dec 2025 - Present",
+    title: "Associate Trainee - VAPT",
+    subContent: "Finstein",
+    details:
+      "Working as a part-time technical support member handling social media management, website updates, and providing suggestions to streamline customer order processing and internal workflows. Assist in managing product-related billing, content coordination, and daily digital operations. Balancing freelance work alongside this role while preparing for interviews to secure my first IT job."
+  },
+
+   {
+    duration: "Dec 2025 - Dec 2025",
     title: "Technical Support",
     subContent: "Yami Herbals",
     details:
@@ -12,7 +20,7 @@ const experienceData = [
   },
    
   {
-    duration: "Aug 2025 - Present",
+    duration: "Aug 2025 - Dec 2025",
     title: "Freelancer",
     subContent: "Web & Mobile App Projects",
     details: "Delivered real-world client work including domain purchase, hosting, deployment and user validation. Completed Vel Crackers as the first freelance project and gained experience in client communication, requirement gathering and production deployment."
