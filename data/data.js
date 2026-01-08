@@ -8,8 +8,8 @@ const experienceData = [
     title: "Associate Trainee - VAPT",
     subContent: "Finstein",
     details:
-      "Working as a part-time technical support member handling social media management, website updates, and providing suggestions to streamline customer order processing and internal workflows. Assist in managing product-related billing, content coordination, and daily digital operations. Balancing freelance work alongside this role while preparing for interviews to secure my first IT job."
-  },
+  "Currently working as an Associate Trainee (VAPT) at Finstein, focusing on identifying security vulnerabilities and securing digital systems. I have transitioned from my freelance and support roles to dedicate my full professional focus to cybersecurity."
+       },
 
    {
     duration: "Dec 2025 - Dec 2025",
